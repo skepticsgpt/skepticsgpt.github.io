@@ -28,7 +28,7 @@
 <body>
 <main>
 <h1>SkepticsGPT Privacy Policy</h1>
-<p class="meta">Version 1.2 · Effective 18 October 2026</p>
+<p class="meta">Version 1.3 · Effective 18 October 2026</p>
 
 <p>This policy explains what the SkepticsGPT Android app (package
 <code>com.el.skepticsgpt</code>) collects, why, who receives it, how long we
@@ -77,10 +77,17 @@ daily count</td>
 Google Play Integrity</td>
 <td>To confirm requests come from the genuine app and protect the service
 from abuse</td></tr>
-<tr><td><strong>Usage and device data</strong> collected automatically by
-Google Analytics for Firebase, such as app opens, screens viewed, app
-version, device model, and approximate region</td>
-<td>To understand how the app performs and fix problems</td></tr>
+<tr><td><strong>App usage analytics</strong> collected automatically by
+Google Analytics for Firebase while "Share app usage analytics" is on, such
+as app opens, screens viewed, time in the app, Google Play purchases, app
+version, device model, and approximate location. See
+<a href="#app-usage-analytics">App usage analytics</a></td>
+<td>To understand how people use the app and improve it</td></tr>
+<tr><td><strong>Crash reports</strong> from Firebase Crashlytics while
+"Send crash reports" is on: where the app crashed or froze, the device
+model, and random installation IDs. See
+<a href="#crash-reports">Crash reports</a></td>
+<td>To find and fix crashes</td></tr>
 <tr><td><strong>Feedback</strong> you choose to give, such as "Was this
 helpful?"</td>
 <td>To improve analyses</td></tr>
@@ -128,10 +135,63 @@ uses information from sites or apps that use its services</a>. You can
 change or withdraw ad consent at any time through "Ad privacy choices" in
 the wallet.</p>
 
+<h2 id="app-usage-analytics">App usage analytics</h2>
+<p>The app uses Google Analytics for Firebase to understand how people use
+the app and to improve it. Google processes this data for us as our service
+provider.</p>
+<ul>
+<li><strong>What it collects:</strong> the events Google Analytics records
+on its own: when the app is installed, opened, updated, or removed; sessions
+and time spent in the app; the screens you open; purchases and refunds
+through Google Play, with the product, its price, and the currency; and, if
+you watch a rewarded ad, that it was shown and paid out. With these events
+it records the phone model, the Android and app versions, your language, a
+random app instance ID, and an approximate location, such as your country,
+region, or city, that Google works out from your network address.</li>
+<li><strong>What it never includes:</strong> the text you analyze, your
+results, the links you share, or your account. The app logs no events of
+its own and never gives Analytics your user ID.</li>
+<li><strong>No advertising use:</strong> the app stops Google Analytics from
+collecting the Android advertising ID and from using this data to
+personalize ads.</li>
+<li><strong>How long Google keeps it:</strong> up to 2 months after you
+last use the app, the Google Analytics default. Reports that only count
+users, without identifying anyone, may be kept longer.</li>
+<li><strong>How to turn it off:</strong> in the app, open Profile, go to
+Privacy &amp; transparency, and turn off <strong>Share app usage
+analytics</strong>. It is on until you turn it off, and it works whether or
+not you are signed in. Turning it off stops collection at once and clears
+the usage data your phone has not sent yet. Data already sent stays with
+Google Analytics until the period above ends.</li>
+</ul>
+
+<h2 id="crash-reports">Crash reports</h2>
+<p>If the app crashes or freezes, it can send a crash report to Firebase
+Crashlytics, so we can find and fix the problem. Google processes this data
+for us as our service provider.</p>
+<ul>
+<li><strong>What a report holds:</strong> where in the app's code it
+crashed or froze (stack traces and the names of the errors), the phone
+model, the Android and app versions, free memory and disk space, and random
+installation IDs from Crashlytics and Firebase. If usage analytics is on, a
+report also holds recent usage events, such as which screen was open.</li>
+<li><strong>What it never includes:</strong> your text, your messages,
+your results, or your account. The app removes every error message before a
+report is made, because an error message can quote what you typed, and it
+adds no user ID, notes, or custom data of its own.</li>
+<li><strong>How long it is kept:</strong> Crashlytics keeps reports for 90
+days.</li>
+<li><strong>How to turn it off:</strong> in the app, open Profile, go to
+Privacy &amp; transparency, and turn off <strong>Send crash
+reports</strong>. Crash reports are on by default. Turning them off also
+deletes any report your phone has not sent.</li>
+</ul>
+
 <h2>Who receives your information</h2>
 <ul>
 <li><strong>Google</strong>, as our service provider for Firebase
-(Authentication, Cloud Firestore, Cloud Functions, App Check, Analytics),
+(Authentication, Cloud Firestore, Cloud Functions, App Check, Analytics,
+Crashlytics),
 Google Play billing and Play Integrity, and AdMob.</li>
 <li><strong>OpenAI</strong>, which processes text you submit for
 analysis.</li>
@@ -151,8 +211,9 @@ contractual clauses.</p>
 <li>Account, profile, token, purchase, and ad-reward records: while your
 account exists. After you delete your account, we keep financial records
 only as long as tax, accounting, or fraud-prevention law requires.</li>
-<li>Analytics data: under Google Analytics retention settings, at most 14
-months.</li>
+<li>App usage analytics: up to 2 months after you last use the app, the
+Google Analytics default.</li>
+<li>Crash reports: 90 days.</li>
 </ul>
 
 <h2>Your choices and rights</h2>
@@ -161,6 +222,10 @@ months.</li>
 profile, and you can turn it off at any time.</li>
 <li><strong>Ad consent</strong> can be changed through "Ad privacy
 choices".</li>
+<li><strong>Usage analytics</strong> is on until you turn off "Share app
+usage analytics" in Profile, under Privacy &amp; transparency.</li>
+<li><strong>Crash reports</strong> are on until you turn off "Send crash
+reports" in the same place.</li>
 <li><strong>Access, correction, export, and deletion.</strong> You can
 edit your display name in the app. To get a copy of your data or delete
 your account and its data, email us from the address on your account. We
@@ -174,7 +239,8 @@ authority. We do not treat you differently for using these rights.</li>
 <p>Our legal bases, where the GDPR applies: performing our contract with
 you (account, analyses, tokens, purchases), your consent (saved history
 and ads), and our legitimate interests (security, abuse prevention, and
-improving the app).</p>
+improving the app, including usage analytics and crash reports, which you
+can turn off at any time).</p>
 
 <h2>Children</h2>
 <p>SkepticsGPT is not directed at children under 13, and we do not
